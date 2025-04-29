@@ -1,4 +1,46 @@
 body {
-    background-color: forestgreen;
+    background-color: #076652;
     color: whitesmoke;
 }
+
+h2 {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    text-align: left;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: ;
+    overflow: hidden;
+  }
+  
+  nav ul li :hover:not(.active) {
+    background-color: darkblue;
+    color: white;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
