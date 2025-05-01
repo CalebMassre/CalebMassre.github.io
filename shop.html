@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="Icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="favicon_io/favicon.ico">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golf World | Contact</title>
+  <link rel="stylesheet" href="css/shopStyles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>This is the Contact page</h1>
+  <header>
+    <h1>Contact Golf World</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">About</a></li>
+        <li><a href="shop.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>We’d Love to Hear From You</h2>
+      <form onsubmit="return handleSubmit();">
+        <label>Name: <input type="text" id="nameInput" required /></label><br/>
+        <label><input type="checkbox" id="newsletter" /> Subscribe to newsletter</label><br/>
+        <label>Are you a golfer?</label><br/>
+        <label><input type="radio" name="golfer" value="yes" /> Yes</label>
+        <label><input type="radio" name="golfer" value="no" /> No</label><br/><br/>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="responseArea"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Golf World</p>
+  </footer>
 </body>
 </html>

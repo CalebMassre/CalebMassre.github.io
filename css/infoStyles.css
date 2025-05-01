@@ -1,0 +1,48 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #f9f9f9;
+    color: #2e2e2e;
+    margin: 0;
+  }
+  
+  header {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about-section, .list-section, .resources {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  ul {
+    line-height: 1.8;
+  }
+  
+  footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }

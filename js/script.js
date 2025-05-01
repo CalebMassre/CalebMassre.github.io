@@ -1,15 +1,11 @@
-function changeContent() {
-    document.getElementById('dynamicContent').innerHTML = '<p>Content has been updated! Welcome to the interactive section!</p>';
-}
-
-document.getElementById('golferForm').onsubmit = function(event) {
-    const golferName = document.getElementById('golferName').value;
-    if (golferName === "") {
-        alert("Please enter a golfer name.");
-        event.preventDefault();
+function handleSubmit() {
+    const name = document.getElementById("nameInput").value;
+    const isSubscribed = document.getElementById("newsletter").checked;
+  
+    let message = `Thanks for contacting us, ${name}!`;
+    if (isSubscribed) {
+      message += " You've subscribed to our newsletter.";
     }
-};
-
-document.querySelector('button[type="reset"]').addEventListener('click', function() {
-    alert('Form has been reset');
-});
+  
+    document.getElementById("responseArea").innerHTML = `<p>${message}</p>`;
+    return false; // prevent page reload

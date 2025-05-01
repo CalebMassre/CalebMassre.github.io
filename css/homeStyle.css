@@ -1,46 +1,91 @@
 body {
-    background-color: #076652;
-    color: whitesmoke;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: white;
+  color: #1b3a1b;
+}
+
+header {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
 h2 {
-    background-color: white;
-    color: black;
-    padding: 3px;
-    text-align: left;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: ;
-    overflow: hidden;
-  }
-  
-  nav ul li :hover:not(.active) {
-    background-color: darkblue;
-    color: white;
-  }
+  text-align: center;
+}
 
-  nav ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul:hover:not(.active) {
+  background-color: darkslategray;
+  color: white;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #006400;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #006400;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+footer {
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
